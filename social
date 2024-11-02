@@ -1,0 +1,25 @@
+// Function to create a 'Get Targeted Social Traffic' button and handle click
+
+function createSocialTrafficButton() {
+    // Create a new button element
+    const button = document.createElement("button");
+    button.innerText = "Boost Social Traffic Now!";
+    button.style.padding = "10px 20px";
+    button.style.fontSize = "16px";
+    button.style.backgroundColor = "#1da1f2"; // Social media-like blue
+    button.style.color = "white";
+    button.style.border = "none";
+    button.style.borderRadius = "5px";
+    button.style.cursor = "pointer";
+
+    // Add click event to redirect to targeted social traffic page
+    button.onclick = function() {
+        window.location.href = "https://realtrafficsource.com/product/targeted-social-traffic/";
+    };
+
+    // Add the button to the webpage
+    document.body.appendChild(button);
+}
+
+// Call the function to display the button on page load
+window.onload = createSocialTrafficButton;
